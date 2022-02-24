@@ -1,6 +1,6 @@
 package main
 
-import "github.com/chenminhua/data_generator/es"
+import "github.com/chenminhua/data_generator/redisutil"
 
 func main() {
 	// 生成1000000万用户
@@ -21,5 +21,6 @@ func main() {
 	//	ch <- i
 	//}
 	//close(ch)
-	es.Run()
+	//es.Run()
+	redisutil.GenerateUsers()
 }
